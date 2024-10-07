@@ -18,14 +18,19 @@ def submit():
     departure_service = request.form['departure_service']
     
     # Here you can process the data, e.g., store it in a database or a file
-    # For now, we'll just print it to the console
-    print(f"Name: {name}")
-    print(f"Date of Birth: {dob}")
-    print(f"Appointment Location: {appointment_location}")
-    print(f"Appointment Date: {appointment_date}")
-    print(f"Appointment Time: {appointment_time}")
-    print(f"Room Number: {room_number}")
-    print(f"Departure Service: {departure_service}")
+    # Path to the CSV file
+    csv_file = 'transport_requests.csv'
+    
+    # Check if the file exists
+    file_exists = os.path.isfile(csv_file)
+    
+    # Write the data to the CSV file
+    with open(csv_file, mode='a', newline='') as file:
+        writer = csv.writer(file)
+        if not file_exists:
+            # Write the header if the file does not exist
+            writer.writerow(['Name', 'Date of Birth', 'Appointment Location', 'Appointment Date', 'Appointment Time', 'Room Number', 'Departure Service'])
+        writer.writerow([name, dob, appointment_location, appointment_date, appointment_time, room_number, departure_service])
     
     return redirect(url_for('form'))
 
