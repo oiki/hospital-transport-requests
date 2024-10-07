@@ -33,12 +33,18 @@
         
         <input type="submit" value="Submit">
     </form>
-    <h2>View Transport History</h2>
-    <form action="/history" method="get">
-        <label for="service">Select Service:</label><br>
-        <input type="text" id="service" name="service" required><br><br>
-        <input type="submit" value="View History">
-    </form>
+<h2>View Transport History</h2>
+<form action="/history" method="get">
+    <label for="service">Select Service:</label><br>
+    <select id="service" name="service" required>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Oncology">Oncology</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Orthopedics">Orthopedics</option>
+    </select><br><br>
+    <input type="submit" value="View History">
+</form>
     <h2>View Pending Transports</h2>
     <form action="/pending" method="get">
         <label for="service">Select Service:</label><br>
