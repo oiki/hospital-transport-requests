@@ -1,10 +1,12 @@
-Name,Date of Birth,Appointment Location,Appointment Date,Appointment Time,Room Number,Departure Service,Transporter
-test,2024-10-07,test,2024-10-07,12:00,123,med,Transporter 1
-John Doe,1980-01-01,Room 101,2024-10-10,10:00,202,Cardiology,Transporter 1
-Jane Doe,1990-02-02,Room 102,2024-10-11,11:00,203,Neurology,
-Alice Smith,1985-03-03,Room 103,2024-10-12,12:00,204,Oncology,
-Bob Johnson,1975-04-04,Room 104,2024-10-13,13:00,205,Radiology,
-tet,2024-10-07,test,2024-10-07,12:12,123,test,
-Charlie Brown,1970-05-05,Room 105,2024-10-14,14:00,206,Orthopedics,
-David Green,1965-06-06,Room 106,2024-10-15,15:00,207,Cardiology,
-Eve White,1960-07-07,Room 107,2024-10-16,16:00,208,Neurology,
+Name,Date of Birth,Appointment Location,Appointment Date,Appointment Time,Room Number,Departure Service,Transporter,Status
+test,2024-10-07,test,2024-10-07,12:00,123,med,Transporter 1,
+John Doe,1980-01-01,Room 101,2024-10-10,10:00,202,Cardiology,Transporter 1,
+Jane Doe,1990-02-02,Room 102,2024-10-11,11:00,203,Neurology,,
+Alice Smith,1985-03-03,Room 103,2024-10-12,12:00,204,Oncology,,
+Bob Johnson,1975-04-04,Room 104,2024-10-13,13:00,205,Radiology,,
+tet,2024-10-07,test,2024-10-07,12:12,123,test,,
+Charlie Brown,1970-05-05,Room 105,2024-10-14,14:00,206,Orthopedics,,
+David Green,1965-06-06,Room 106,2024-10-15,15:00,207,Cardiology,,
+Eve White,1960-07-07,Room 107,2024-10-16,16:00,208,Neurology,,
+Alice Johnson,1975-05-05,Room 108,2024-10-17,17:00,209,Cardiology,Transporter1,Pending
+Bob Smith,1980-06-06,Room 109,2024-10-18,18:00,210,Neurology,Transporter1,Completed
