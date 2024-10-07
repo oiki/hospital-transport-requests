@@ -38,6 +38,33 @@ def regulation():
             transports.append(row)
     return render_template('regulation.html', transports=transports)
 
+@app.route('/assign_transporter', methods=['POST'])
+def assign_transporter():
+    name = request.form['name']
+    dob = request.form['dob']
+    transporter = request.form['transporter']
+    
+    # Lire les données existantes
+    transports = []
+    with open('transport_requests.csv', mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            transports.append(row)
+    
+    # Mettre à jour le transporteur attribué
+    for transport in transports:
+        if transport['Name'] == name and transport['Date of Birth'] == dob:
+            transport['Transporter'] = transporter
+    
+    # Écrire les données mises à jour
+    with open('transport_requests.csv', mode='w', newline='') as file:
+        fieldnames = ['Name', 'Date of Birth', 'Appointment Location', 'Appointment Date', 'Appointment Time', 'Room Number', 'Departure Service', 'Transporter']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(transports)
+    
+    return redirect(url_for('regulation'))
+
 @app.route('/submit', methods=['POST'])
 def submit():
     name = request.form['name']
