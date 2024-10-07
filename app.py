@@ -9,6 +9,26 @@ app = Flask(__name__)
 def form():
     return render_template('form.html')
 
+@app.route('/history/<service>')
+def history(service):
+    transports = []
+    with open('transport_requests.csv', mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            if row['Departure Service'] == service:
+                transports.append(row)
+    return render_template('history.html', transports=transports, service=service)
+
+@app.route('/pending/<service>')
+def pending(service):
+    transports = []
+    with open('transport_requests.csv', mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            if row['Departure Service'] == service and not row.get('Handled', False):
+                transports.append(row)
+    return render_template('pending.html', transports=transports, service=service)
+
 @app.route('/submit', methods=['POST'])
 def submit():
     name = request.form['name']
