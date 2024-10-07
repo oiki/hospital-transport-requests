@@ -9,3 +9,11 @@
 127.0.0.1 - - [07/Oct/2024 09:14:40] "GET /history/Cardiology HTTP/1.1" 200 -
 127.0.0.1 - - [07/Oct/2024 09:14:44] "GET /pending/Cardiology HTTP/1.1" 200 -
 127.0.0.1 - - [07/Oct/2024 09:14:49] "GET /regulation HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:15:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:15:01] "GET /regulation HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:15:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/Oct/2024 09:17:07] "[32mPOST /submit HTTP/1.1[0m" 302 -
+127.0.0.1 - - [07/Oct/2024 09:17:26] "GET /history/Neurology HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:17:29] "GET /pending/Neurology HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:18:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:18:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

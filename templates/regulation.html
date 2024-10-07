@@ -17,6 +17,7 @@
             <th>Appointment Time</th>
             <th>Room Number</th>
             <th>Departure Service</th>
+            <th>Transporter</th>
         </tr>
         {% for transport in transports %}
         <tr>
@@ -27,6 +28,18 @@
             <td>{{ transport['Appointment Time'] }}</td>
             <td>{{ transport['Room Number'] }}</td>
             <td>{{ transport['Departure Service'] }}</td>
+            <td>
+                <form action="/assign_transporter" method="post">
+                    <input type="hidden" name="name" value="{{ transport['Name'] }}">
+                    <input type="hidden" name="dob" value="{{ transport['Date of Birth'] }}">
+                    <select name="transporter">
+                        <option value="Transporter 1">Transporter 1</option>
+                        <option value="Transporter 2">Transporter 2</option>
+                        <option value="Transporter 3">Transporter 3</option>
+                    </select>
+                    <input type="submit" value="Assign">
+                </form>
+            </td>
         </tr>
         {% endfor %}
     </table>
