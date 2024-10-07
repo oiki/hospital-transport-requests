@@ -29,6 +29,15 @@ def pending(service):
                 transports.append(row)
     return render_template('pending.html', transports=transports, service=service)
 
+@app.route('/regulation')
+def regulation():
+    transports = []
+    with open('transport_requests.csv', mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            transports.append(row)
+    return render_template('regulation.html', transports=transports)
+
 @app.route('/submit', methods=['POST'])
 def submit():
     name = request.form['name']
