@@ -9,10 +9,14 @@
 </head>
 <body>
     <h1>Transporter Login</h1>
-    <form action="/login" method="post">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
-        <input type="submit" value="Login">
-    </form>
+<form action="/login" method="post">
+    <label for="username">Select Transporter:</label><br>
+    <select id="username" name="username" required>
+        <option value="Transporter1">Transporter 1</option>
+        <option value="Transporter2">Transporter 2</option>
+        <option value="Transporter3">Transporter 3</option>
+    </select><br><br>
+    <input type="submit" value="Login">
+</form>
 </body>
 </html>
