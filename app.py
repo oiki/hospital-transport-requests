@@ -70,7 +70,16 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         return redirect(url_for('transporter_dashboard', username=username))
-    return render_template('login.html')
+    
+    # Read the list of transporters from the CSV file
+    transporters = set()
+    with open('transport_requests.csv', mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            if 'Transporter' in row and row['Transporter']:
+                transporters.add(row['Transporter'])
+    
+    return render_template('login.html', transporters=transporters)
 
 @app.route('/transporter/<username>')
 def transporter_dashboard(username):

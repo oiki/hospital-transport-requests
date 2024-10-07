@@ -12,9 +12,9 @@
 <form action="/login" method="post">
     <label for="username">Select Transporter:</label><br>
     <select id="username" name="username" required>
-        <option value="Transporter1">Transporter 1</option>
-        <option value="Transporter2">Transporter 2</option>
-        <option value="Transporter3">Transporter 3</option>
+        {% for transporter in transporters %}
+        <option value="{{ transporter }}">{{ transporter }}</option>
+        {% endfor %}
     </select><br><br>
     <input type="submit" value="Login">
 </form>
