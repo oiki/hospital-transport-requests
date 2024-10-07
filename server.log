@@ -38,3 +38,5 @@
 127.0.0.1 - - [07/Oct/2024 09:32:40] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [07/Oct/2024 09:32:40] "GET /pending/Cardiology HTTP/1.1" 200 -
 127.0.0.1 - - [07/Oct/2024 09:32:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Oct/2024 09:33:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:33:56] "GET /static/styles.css HTTP/1.1" 200 -
