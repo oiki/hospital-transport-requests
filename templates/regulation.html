@@ -8,42 +8,36 @@
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <h1>Transport Regulation</h1>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Date of Birth</th>
-            <th>Appointment Location</th>
-            <th>Appointment Date</th>
-            <th>Appointment Time</th>
-            <th>Room Number</th>
-            <th>Departure Service</th>
-            <th>Transporter</th>
-        </tr>
-        {% for transport in transports %}
-        <tr>
-            <td>{{ transport['Name'] }}</td>
-            <td>{{ transport['Date of Birth'] }}</td>
-            <td>{{ transport['Appointment Location'] }}</td>
-            <td>{{ transport['Appointment Date'] }}</td>
-            <td>{{ transport['Appointment Time'] }}</td>
-            <td>{{ transport['Room Number'] }}</td>
-            <td>{{ transport['Departure Service'] }}</td>
-            <td>
-                <form action="/assign_transporter" method="post">
-                    <input type="hidden" name="name" value="{{ transport['Name'] }}">
-                    <input type="hidden" name="dob" value="{{ transport['Date of Birth'] }}">
-                    <select name="transporter">
-                        <option value="Transporter 1">Transporter 1</option>
-                        <option value="Transporter 2">Transporter 2</option>
-                        <option value="Transporter 3">Transporter 3</option>
-                    </select>
-                    <input type="submit" value="Assign">
-                </form>
-            </td>
-        </tr>
-        {% endfor %}
-    </table>
-    <a href="/">Back to Form</a>
+    <div class="container">
+        <h1>Transport Regulation</h1>
+        <table class="table-auto w-full border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="border border-gray-300 px-4 py-2">Name</th>
+                    <th class="border border-gray-300 px-4 py-2">Date of Birth</th>
+                    <th class="border border-gray-300 px-4 py-2">Appointment Location</th>
+                    <th class="border border-gray-300 px-4 py-2">Appointment Date</th>
+                    <th class="border border-gray-300 px-4 py-2">Appointment Time</th>
+                    <th class="border border-gray-300 px-4 py-2">Room Number</th>
+                    <th class="border border-gray-300 px-4 py-2">Departure Service</th>
+                    <th class="border border-gray-300 px-4 py-2">Transporter</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for transport in transports %}
+                <tr>
+                    <td class="border border-gray-300 px-4 py-2">{{ transport['Name'] }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ transport['Date of Birth'] }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ transport['Appointment Location'] }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ transport['Appointment Date'] }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ transport['Appointment Time'] }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ transport['Room Number'] }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ transport['Departure Service'] }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ transport['Transporter'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

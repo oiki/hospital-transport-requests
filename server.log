@@ -1,10 +1,24 @@
- * Serving Flask app 'app'
+ * Serving Flask app 'app.py'
  * Debug mode: off
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
 [33mPress CTRL+C to quit[0m
-127.0.0.1 - - [07/Oct/2024 09:22:45] "HEAD /login HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:22:50] "[32mPOST /login HTTP/1.1[0m" 302 -
-127.0.0.1 - - [07/Oct/2024 09:22:56] "GET /transporter/Transporter1 HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:23:02] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:23:04] "GET /transporter/Transporter1/history HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:29:18] "HEAD / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:29:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:29:22] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:29:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/Oct/2024 09:29:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:29:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Oct/2024 09:29:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [07/Oct/2024 09:29:36] "GET /transporter/Transporter1 HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:29:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Oct/2024 09:29:40] "GET /transporter/Transporter1/history HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:29:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Oct/2024 09:29:51] "HEAD / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:29:54] "HEAD /history/sample-service HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:29:58] "HEAD /pending/sample-service HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:30:04] "HEAD /regulation HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:30:38] "[33mGET /history?service=Cardiology HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/Oct/2024 09:30:43] "[33mGET /pending?service=Cardiology HTTP/1.1[0m" 404 -
