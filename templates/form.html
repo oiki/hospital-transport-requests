@@ -32,5 +32,17 @@
         
         <input type="submit" value="Submit">
     </form>
+    <h2>View Transport History</h2>
+    <form action="/history" method="get">
+        <label for="service">Select Service:</label><br>
+        <input type="text" id="service" name="service" required><br><br>
+        <input type="submit" value="View History">
+    </form>
+    <h2>View Pending Transports</h2>
+    <form action="/pending" method="get">
+        <label for="service">Select Service:</label><br>
+        <input type="text" id="service" name="service" required><br><br>
+        <input type="submit" value="View Pending">
+    </form>
 </body>
 </html>
