@@ -3,25 +3,4 @@
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 [33mPress CTRL+C to quit[0m
-127.0.0.1 - - [07/Oct/2024 09:05:34] "[32mPOST /submit HTTP/1.1[0m" 302 -
-127.0.0.1 - - [07/Oct/2024 09:05:41] "GET /history/Cardiology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:05:44] "GET /pending/Cardiology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:07:23] "[32mPOST /submit HTTP/1.1[0m" 302 -
-127.0.0.1 - - [07/Oct/2024 09:07:52] "GET /history/Neurology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:08:03] "GET /pending/Neurology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:08:41] "[32mPOST /submit HTTP/1.1[0m" 302 -
-127.0.0.1 - - [07/Oct/2024 09:08:49] "GET /history/Oncology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:08:52] "GET /pending/Oncology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:09:55] "[32mPOST /submit HTTP/1.1[0m" 302 -
-127.0.0.1 - - [07/Oct/2024 09:09:59] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:10:02] "GET /history/Radiology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:10:05] "GET /pending/Radiology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:10:09] "[33mGET /history?service=oncologie HTTP/1.1[0m" 404 -
-127.0.0.1 - - [07/Oct/2024 09:11:01] "[32mPOST /submit HTTP/1.1[0m" 302 -
-127.0.0.1 - - [07/Oct/2024 09:11:01] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:11:07] "[33mGET /history?service=test HTTP/1.1[0m" 404 -
-127.0.0.1 - - [07/Oct/2024 09:11:21] "[33mGET /history?service=Radiology HTTP/1.1[0m" 404 -
-127.0.0.1 - - [07/Oct/2024 09:11:27] "[33mGET /pending?service=Radiology HTTP/1.1[0m" 404 -
-127.0.0.1 - - [07/Oct/2024 09:11:46] "[32mPOST /submit HTTP/1.1[0m" 302 -
-127.0.0.1 - - [07/Oct/2024 09:11:55] "GET /history/Orthopedics HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:12:00] "GET /pending/Orthopedics HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:13:53] "GET /regulation HTTP/1.1" 200 -
