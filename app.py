@@ -79,7 +79,7 @@ def login():
             if 'Transporter' in row and row['Transporter']:
                 transporters.add(row['Transporter'])
     
-    return render_template('login.html', transporters=transporters)
+    return render_template('login.html', transporters=sorted(transporters))
 
 @app.route('/transporter/<username>')
 def transporter_dashboard(username):
