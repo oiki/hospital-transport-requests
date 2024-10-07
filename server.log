@@ -3,21 +3,6 @@
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 [33mPress CTRL+C to quit[0m
-127.0.0.1 - - [07/Oct/2024 09:13:53] "GET /regulation HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:14:18] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:14:33] "[32mPOST /submit HTTP/1.1[0m" 302 -
-127.0.0.1 - - [07/Oct/2024 09:14:40] "GET /history/Cardiology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:14:44] "GET /pending/Cardiology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:14:49] "GET /regulation HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:15:01] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:15:01] "GET /regulation HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:15:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-127.0.0.1 - - [07/Oct/2024 09:17:07] "[32mPOST /submit HTTP/1.1[0m" 302 -
-127.0.0.1 - - [07/Oct/2024 09:17:26] "GET /history/Neurology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:17:29] "GET /pending/Neurology HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:18:20] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:18:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-127.0.0.1 - - [07/Oct/2024 09:18:32] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [07/Oct/2024 09:18:35] "[33mGET /history?service=med HTTP/1.1[0m" 404 -
-127.0.0.1 - - [07/Oct/2024 09:18:37] "[33mGET /pending?service=med HTTP/1.1[0m" 404 -
-127.0.0.1 - - [07/Oct/2024 09:18:42] "[33mGET /pending HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/Oct/2024 09:18:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:19:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:19:05] "[32mPOST /assign_transporter HTTP/1.1[0m" 302 -
