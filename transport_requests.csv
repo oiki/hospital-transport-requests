@@ -2,3 +2,4 @@ Name,Date of Birth,Appointment Location,Appointment Date,Appointment Time,Room N
 test,2024-10-07,test,2024-10-07,12:00,123,med
 John Doe,1980-01-01,Room 101,2024-10-10,10:00,202,Cardiology
 Jane Doe,1990-02-02,Room 102,2024-10-11,11:00,203,Neurology
+Alice Smith,1985-03-03,Room 103,2024-10-12,12:00,204,Oncology
