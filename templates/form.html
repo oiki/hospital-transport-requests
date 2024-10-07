@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Request Form</title>
+</head>
+<body>
+    <h1>Transport Request Form</h1>
+    <form action="/submit" method="post">
+        <label for="name">Patient Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="appointment_location">Appointment Location:</label><br>
+        <input type="text" id="appointment_location" name="appointment_location" required><br><br>
+        
+        <label for="appointment_date">Appointment Date:</label><br>
+        <input type="date" id="appointment_date" name="appointment_date" required><br><br>
+        
+        <label for="appointment_time">Appointment Time:</label><br>
+        <input type="time" id="appointment_time" name="appointment_time" required><br><br>
+        
+        <label for="room_number">Room Number:</label><br>
+        <input type="text" id="room_number" name="room_number" required><br><br>
+        
+        <label for="departure_service">Departure Service:</label><br>
+        <input type="text" id="departure_service" name="departure_service" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
