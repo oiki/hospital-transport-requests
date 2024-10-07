@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport History for {{ service }}</title>
+</head>
+<body>
+    <h1>Transport History for {{ service }}</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Appointment Location</th>
+            <th>Appointment Date</th>
+            <th>Appointment Time</th>
+            <th>Room Number</th>
+            <th>Departure Service</th>
+        </tr>
+        {% for transport in transports %}
+        <tr>
+            <td>{{ transport['Name'] }}</td>
+            <td>{{ transport['Date of Birth'] }}</td>
+            <td>{{ transport['Appointment Location'] }}</td>
+            <td>{{ transport['Appointment Date'] }}</td>
+            <td>{{ transport['Appointment Time'] }}</td>
+            <td>{{ transport['Room Number'] }}</td>
+            <td>{{ transport['Departure Service'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to Form</a>
+</body>
+</html>
