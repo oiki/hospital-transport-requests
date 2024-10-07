@@ -6,3 +6,6 @@
 127.0.0.1 - - [07/Oct/2024 09:05:34] "[32mPOST /submit HTTP/1.1[0m" 302 -
 127.0.0.1 - - [07/Oct/2024 09:05:41] "GET /history/Cardiology HTTP/1.1" 200 -
 127.0.0.1 - - [07/Oct/2024 09:05:44] "GET /pending/Cardiology HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:07:23] "[32mPOST /submit HTTP/1.1[0m" 302 -
+127.0.0.1 - - [07/Oct/2024 09:07:52] "GET /history/Neurology HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:08:03] "GET /pending/Neurology HTTP/1.1" 200 -
