@@ -65,6 +65,33 @@ def assign_transporter():
     
     return redirect(url_for('regulation'))
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        return redirect(url_for('transporter_dashboard', username=username))
+    return render_template('login.html')
+
+@app.route('/transporter/<username>')
+def transporter_dashboard(username):
+    transports = []
+    with open('transport_requests.csv', mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            if row.get('Transporter') == username:
+                transports.append(row)
+    return render_template('transporter_dashboard.html', transports=transports, username=username)
+
+@app.route('/transporter/<username>/history')
+def transporter_history(username):
+    transports = []
+    with open('transport_requests.csv', mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            if row.get('Transporter') == username and row.get('Status') == 'Completed':
+                transports.append(row)
+    return render_template('transporter_history.html', transports=transports, username=username)
+
 @app.route('/submit', methods=['POST'])
 def submit():
     name = request.form['name']
