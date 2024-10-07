@@ -12,3 +12,8 @@
 127.0.0.1 - - [07/Oct/2024 09:08:41] "[32mPOST /submit HTTP/1.1[0m" 302 -
 127.0.0.1 - - [07/Oct/2024 09:08:49] "GET /history/Oncology HTTP/1.1" 200 -
 127.0.0.1 - - [07/Oct/2024 09:08:52] "GET /pending/Oncology HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:09:55] "[32mPOST /submit HTTP/1.1[0m" 302 -
+127.0.0.1 - - [07/Oct/2024 09:09:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:10:02] "GET /history/Radiology HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:10:05] "GET /pending/Radiology HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2024 09:10:09] "[33mGET /history?service=oncologie HTTP/1.1[0m" 404 -
